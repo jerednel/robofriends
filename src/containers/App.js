@@ -7,7 +7,8 @@ import ErrorBoundry from '../components/ErrorBoundry'
 
 const App = () => {
     const onSearchChange = (event) => {
-        this.setState({searchfield: event.target.value})
+        setsearchfield(event.target.value);
+        //this.setState({searchfield: event.target.value})
     }
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
